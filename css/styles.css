@@ -1,0 +1,162 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+.container {
+    background: #dededd;
+    height: 100vh;
+    width: 100ww;
+}
+.container-head {
+    width: 100ww;
+    height: 20vh;
+    background:#37a884 ;
+}
+.container-content {
+    width: 80vw;
+    height: 100vh;
+    background: #ffffff;
+    position: fixed;
+    top: 5%;
+    right: 10%;
+    left: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.content-sidemenu {
+    height: 100vh;
+    width: 30%;
+    background: #ffffff;
+}
+.content-content {
+    background: #efeae2;
+    width: 70%;
+    height: 100vh;
+    position: relative;
+}
+.sidemenu-header, .content-header {
+    height: 7%;
+    width: 100%;
+    background:#f0f2f5 ;
+}
+.content-header {
+    border-left: 1px solid #d1d7db;
+}
+.sidemenu-content {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+}
+.sidemenu-content .profile-pic {
+    height: 40px;
+    width: 40px;
+    border-radius: 3rem;
+    background: skyblue;
+}
+.sidemenu-search-box {
+    padding: 1rem
+}
+.search-input {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    width: 100%;
+    border-radius: 0.4rem;
+    border: none;
+    background: #f0f2f5;
+    text-align: center;
+}
+.sidemenu-search-box, input[type="text"], input[type="password"], textarea, select { 
+    outline: none;
+}
+.action-icons {
+    display: flex;
+}
+.icons-custom {
+    padding: 0.5rem
+}
+.icons-custom i {
+    color: #54656f;
+}
+.profile-pic img{
+    width: 40px;
+    border-radius: 50px;
+}
+.user-list {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+    overflow-y: scroll;
+    height: 100%;
+}
+.user-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-bottom : 0.5px solid #e9edef
+}
+.user-details .profile-pic {
+    width: 10%;
+}
+.user-details .details {
+    width: 63%;
+}
+.user-details .recent-chat-time {
+    width: 20%;
+    color: gray;
+    font-size: 12px
+}
+.user-details .details p{
+    margin-top: 5px;
+    color: gray;
+    font-size: 14px
+}
+.send-message-box{
+    position: absolute;
+    bottom: 3rem;
+    right: 0px;
+    /* width: 100%; */
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f2f5;
+    padding: 1rem
+}
+.send-message-box input {
+    width: 88%;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    border-radius: 50px;
+    border: none;
+}
+.send-message-box input[type="text"], input[type="password"], textarea, select { 
+    outline: none;
+}
+.send-message-box .icon {
+    font-size: 30px;
+    color: #54656f;
+}
+.content-content .profile-pic {
+    display: flex;
+}
+.content-content .profile-pic h5{
+    margin-left: 1rem;
+    margin-top: 0.7rem;
+    font-size: 16px;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 1440px) {
+    .container-content {
+        width: 100%;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+    .send-message-box{
+        bottom: 0rem;
+    }
+}
